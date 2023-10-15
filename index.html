@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HALAMAN LOGIN</title>
+</head>
+<body>
+    <header>
+        <!-----membuat logo dan navigasi------> 
+        <h2 class="logo">PROZA</h2>
+        <nav class="navigasi">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+            <button class="login-popup">Login</button>
+        </nav>
+    </header>
+    <!-----membuat pembungkus login------>
+    <div class="wrapper">
+        <span class="close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="login">
+            <h2>Login</h2>
+            <from action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="io-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">login</button>
+                <div class="io-register">
+                    <p>Don't have an account?<a href="#" 
+                    class="register-link"> Register</a></p>
+                </div>
+            </from>
+        </div>
+        <!-----membuat pembungkus register------>
+        <div class="register">
+            <h2>Register</h2>
+            <from action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="io-forgot">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="io-register">
+                    <p>Already have an account?<a href="#" 
+                    class="login-link"> Login</a></p>
+                </div>
+            </from>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scrip.js"></script>
+</body>
+</html>
